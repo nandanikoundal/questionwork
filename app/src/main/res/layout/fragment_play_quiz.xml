@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".PlayQuizFragment">
+
+        <TextView
+            android:id="@+id/score_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="score:0"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/question_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score_view1"
+            android:text="Question: 1/6"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="17dp"
+            android:text="00:30"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tvQPart1"
+            android:layout_width="89dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/question_count"
+            android:layout_marginTop="91dp"
+            android:background="@drawable/box1"
+            android:gravity="center"
+            android:text="tvQPart1"
+            android:textColor="#FFF1F1"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_count"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="123dp"
+            android:src="@drawable/ic_baseline_add_24" />
+
+        <TextView
+            android:id="@+id/tvQPart2"
+            android:layout_width="89dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/question_count"
+            android:layout_marginLeft="155dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/box2"
+            android:gravity="center"
+            android:text="Yellow"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question_count"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="123dp"
+            android:src="@drawable/ic_baseline_arrow_forward_24" />
+
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="51dp"
+            android:layout_height="157dp"
+            android:layout_below="@+id/countdown"
+            android:layout_marginLeft="344dp"
+            android:layout_marginTop="37dp"
+            android:src="@drawable/ic_baseline_question_mark_24" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvQPart1"
+            android:layout_marginTop="40dp" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="395dp"
+            android:layout_height="61dp"
+            android:layout_below="@id/recyclerview"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#40AA44"
+            android:text="Next" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_home_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="#40AA44"/>
+
+
+
+
+
+    </RelativeLayout>
+</layout>
